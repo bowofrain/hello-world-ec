@@ -1,0 +1,79 @@
+
+
+.mima, .azjd {
+    width: 863px;
+    float: right;
+    border: 1px solid #E7E7E7;
+    padding-bottom: 50px;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p, img {
+    padding: 0px;
+    margin: 0px;
+    list-style: outside none none;
+    border: 0px none;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Î¢ÈíÑÅºÚ","ËÎÌå",tahoma,arial,sans-serif;
+    letter-spacing: 0.5px;
+}
+
+
+.mima h2, .azjd h2 {
+    border-bottom: 1px solid #E8E8E8;
+    overflow: hidden;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+}
+
+.mima h2 span, .azjd h2 span {
+    border-left: 2px solid #30D0B6;
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    margin-top: 16px;
+    padding-left: 10px;
+}
+.mima li {
+    overflow: hidden;
+    padding-bottom: 29px;
+}
+
+.mima li span {
+    width: 160px;
+    font-weight: normal;
+    float: left;
+    font-size: 12px;
+    text-align: right;
+    line-height: 29px;
+    color: #000;
+    display: block;
+}
+
+.mima li input, .mima li select {
+    height: 27px;
+    width: 245px;
+    border: 1px solid #E1E1E1;
+    font-size: 13px;
+    color: #A7A7A7;
+    padding-left: 9px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px #FAFAFA inset;
+}
+
+
+.mima li textarea {
+    height: 180px;
+    width: 360px;
+    border: 1px solid #E1E1E1;
+    font-size: 13px;
+    color: #A7A7A7;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px #FAFAFA inset;
+}
+
+

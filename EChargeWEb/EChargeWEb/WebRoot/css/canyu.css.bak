@@ -1,0 +1,20 @@
+
+.cont {margin: auto; overflow: hidden;padding: 20px 0;width: 1100px;}
+.cont_right{ width: 865px; float: right;}
+.cont_right h2{border: 1px solid #e8e8e8; overflow:hidden;font-size: 14px; height: 50px; line-height: 50px; padding-left: 10px;}
+.cont_right h2 span{border-left: 2px solid #30d0b6; display: block; height: 18px; line-height: 18px; margin-top: 16px; padding-left: 10px;}
+.cont_right h2 a{ height:30px; width:92px; line-height:30px; text-align:center; background:#30d0b6; color:#fff; display:block; float:right; margin:10px 20px 0 0; font-size:14px;}
+.cont_right ul{ border-left: 1px solid #e9e8e6;border-right: 1px solid #e9e8e6;}
+.cont_right li{ overflow: hidden;}
+.cont_right li span{ width: 127px; font-size: 12px; height: 40px; line-height: 40px;text-align: center; color: #5a5a5a; border-right: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea; display: block; float: left;}
+.cont_right li span.border_none{ border-right: none;}
+.cont_right li span.span_1{ width: 50px;}
+.cont_right li span.span_2{ width: 200px;}
+.cont_right li span.span_3{ width: 100px;}
+.cont_right li span.span_4{ width: 50px;}
+.cont_right li span.span_5{ width: 205.5px;}
+.cont_right li span.span_6{ width: 80px;}
+.cont_right li span.span_7{ width: 80px;}
+.cont_right li span.span_8{ width: 90px;}
+.cont_right li.li_title span{ font-weight:bold;}
+.cont_right li span a{color: #5a5a5a;}

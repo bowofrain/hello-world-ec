@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//WebRoot/OperatorLogin.jsp=UTF-8
+encoding//WebRoot/admin/ShowAllOperator.jsp=UTF-8
+encoding//WebRoot/login.jsp=UTF-8
+encoding//WebRoot/operator/ShowAllChgPile.jsp=UTF-8
+encoding//WebRoot/user/Personal.jsp=UTF-8
+encoding//WebRoot/user/UpdateUser.jsp=UTF-8
+encoding//src/com/TJPU/ECharge/daoimpl/UserDaoImpl.java=GBK
+encoding//src/echarge.sql=UTF-8
+encoding/<project>=GBK

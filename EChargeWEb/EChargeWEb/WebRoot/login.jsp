@@ -1,0 +1,224 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>桩先生-登录</title>
+  <style type="text/css">
+  a{text-decoration:none;}
+  .fixed{position:fixed;width:100%;height:80px;top:0px;background-color:white;}
+  .logo{ float:left}
+  .head{position:relative; width:1000px;  margin:0px auto;border:2px white solid;height:75.5px;}
+  .right{ margin:10px 0 0 0; width:500px; padding-bottom: 30px; float:right}
+  .top { float:right;height:12px;}
+  .top a{ font-size: 12px; color: #30D0B6;font-family:"微软雅黑"}
+  .bottom{width:100%; text-align:right; margin-bottom:0;margin-top:40px;}
+  .bottom ul{list-style-type:none;}
+  .bottom li{float:left;}
+  .bottom li a{ float:right; font-size:15px; font-family:"微软雅黑";color:#666666; padding-left: 34px;font-weight:bold;}
+  .bottom li a:hover{color:#18BAA0;}
+
+  .line{width:100%;height:1px;margin-top:0.5px;background-color:#C0C0C0;}
+
+  .middle{width:900px; margin:170px auto; border:0; height:400px;}
+  .pic{margin-top:17px;float:left;}
+  .denglu{width:350px;height:395px;border:2px #F0F0F0 solid;float:right;text-align:center;}
+  .dl {font-size:25px;font-family:微软雅黑;font-weight:100; margin-top:20px;}
+  .dl  span{font-family: "宋体";font-size:15px;margin-left:25px;}
+  .dl  span a {color: #30D0B6;}
+  .denglu table a {font-size:13px;color: #30D0B6}
+  .denglu table img{margin-top:15px;}
+  .denglu table  {font-family:微软雅黑; font-size:20px;}
+  .code { 
+	background-image: url(code.jpg);
+	font-family:Arial; 
+	font-style: italic;
+	color: Red;
+	border: 0; 
+	padding: 2px 3px; 
+	letter-spacing: 3px;
+	font-weight: bolder;
+}
+
+  .bottom2{width:100%;height:250px;border:0;background-color:#F1F2F3;}
+  .about{width:150px;height:200px;border:0;margin-top:20px;margin-left:140px;float:left;text-align:left;}
+  .about table{margin-top:10px;}
+  .about a{font-family:微软雅黑;font-size:15px;color:#565656;}
+  .webmap{width:150px;height:200px;border:0;margin-top:20px;margin-left:25px;float:left;text-align:left;}
+  .webmap table{margin-top:10px;}
+  .webmap a{font-family:微软雅黑;font-size:15px;color:#565656;}
+  .contact{width:270px;height:200px;border:0;margin-top:20px;margin-left:25px;float:left;text-align:left;}
+  .contact table{margin-top:10px;}
+  .contact a{font-family:微软雅黑;font-size:15px;color:#565656;}
+  .sline{width:1px;height:200px;background-color:#D4D4D4;margin-left:25px;margin-top:20px;float:left;}
+  .erweima{width:105px;height:150px;border:0;margin-top:70px;margin-left:85px;float:left;}
+
+  .interlinkage{margin-top:5px;margin-left:130px;}
+  .interlinkage span{font-family:微软雅黑;font-size:15px}
+  .interlinkage a{font-family:微软雅黑;font-size:12px;color:#4F4F4F;}
+
+
+  
+  
+ 
+  </style>
+
+   <script language="javascript" type="text/javascript">
+	var code; //在全局 定义验证码  
+
+function createCode() {   
+	code = "";   
+	var codeLength = 4;//验证码的长度     
+	var checkCode = document.getElementById("checkCode");
+
+	var str="0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef";
+					var color = '#';
+					for(i = 0; i < 6; i++){
+						color = color + str.charAt(Math.random() * 96);
+					}
+
+	var selectChar = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
+//所有候选组成验证码的字符，当然也可以用中文的       
+	for (var i = 0; i < codeLength; i++) {   
+		var charIndex = Math.floor(Math.random() * 36);   
+		code += selectChar[charIndex];  
+		}  // alert(code);  
+	//session.setAttribute("valcode", code);//将验证码存在session里
+	if (checkCode) {   
+		checkCode.className = "code";  
+		checkCode.value = code;  
+		} 
+
+	checkCode.style.color = color;
+	session.setAttribute("valcode", code);
+}    
+
+function validate() { 
+	var inputCode = document.getElementById("validate1").value;  
+	if (inputCode.length <= 0) {    
+		alert("请输入验证码！");  
+		} else if (inputCode.toLowerCase() != code.toLowerCase() ) {  
+			alert("验证码输入错误！");  
+			createCode();//刷新验证码    
+} else {  
+	  
+	}
+} 
+</script> 
+
+ </head>
+ <body onload="createCode()">
+ <div class="fixed">
+ <div class="head">
+ <div class="logo">
+ <a href="#" target="_black"><img src="img/logo.png" border="0"></a>
+ </div>
+ <div class="right">
+ <div class="top">
+<a href="map.html" target="_Blank"><img src="img/map.png" border="0">查询附近充电桩&nbsp;&nbsp;丨</a>&nbsp;<a href="login.jsp">登录&nbsp;丨</a>&nbsp;<a href="register.jsp">注册</a>
+</div>
+<div class="bottom">
+<ul> <li ><a href="index.jsp" ><span>首页</span></a></li> <li ><a href="#" ><span>电动社区</span></a></li> <li ><a target="_blank" href="#"><span>i分享</span></a></li> <li ><a href="#" ><span>支持与服务</span></a></li> <li ><a href="#" ><span>关于我们</span></a></li> </ul> 
+</div>
+ </div>
+ </div> 
+
+
+ <div class="line">
+ </div>
+ </div>
+
+
+ <div class="middle">
+ <div class="pic"><img src="img/logo1.png">
+ </div>
+ <div class="denglu">
+ <div class="dl">用户登录<span>还没有账号？<a href="#">立即注册</a></span></div>
+ <img src="img/line.png">
+ <form action="Login" method="post"> 
+ <table align="center"  ><tr ><td colspan="3">
+ <input type="text" name="username"  placeholder="请输入账号名称" style="width:300px;height:30px; border: 1px solid #DDDDDD;margin-top:20px;">
+ </td></tr><tr ><td colspan="3">
+ <input type="password" name="password" placeholder="请输入密码" style="width:300px;height:30px; border: 1px solid #DDDDDD;margin-top:15px;">
+ </td></tr>
+<tr >
+ <!--验证码部分-->
+ <td><input type="text" id="validate1" name="validate" onblur="validate();" placeholder="验证码" style="width:140px;height:37px;border:1px solid #DDDDDD;margin-top:15px;"></td>&nbsp;&nbsp;&nbsp;<td><input type="text" onclick="createCode()" readonly="readonly" id="checkCode" class="unchanged" style="width: 80px" /></td></tr>
+ <tr ><td>
+ <input type="checkbox" name="" value="" style="margin-top:20px;" ><span style="font-size:15px;font-family:微软雅黑;">下次自动登录</span>
+ </td></tr>
+ <tr><td colspan="3">
+ <input type="submit" id="Button1"   value="登录" style="width:300px;height:40px;background-color:#30D0B6;border:0;margin-top:20px">
+ </td></tr>
+ </table>
+ </form>
+ </div>
+ </div>
+
+
+ <div class="bottom2">
+ <div class="about">
+ <span style="font-family:微软雅黑;font-size:20px;margin-left:10px;">关于我们</span>
+  <table  cellpadding="5px">
+ <tr><td><a href="#">桩先生介绍</a></td></tr>
+ <tr><td><a href="#">最新动态</a></td></tr>
+ <tr><td> <a href="#">投诉建议</a></td></tr>
+ <tr><td> <a href="#">联系我们</a></td></tr>
+ <tr><td> <a href="#">关于我们</a></td></tr>
+ </table>
+ </div>
+
+ <div class="webmap">
+ <span style="font-family:微软雅黑;font-size:20px;margin-left:10px;">网站地图</span>
+  <table cellpadding="5px">
+ <tr><td><a href="#">关于我们</a></td></tr>
+ <tr><td><a href="#">桩先生</a></td></tr>
+ <tr><td> <a href="#">电动社区</a></td></tr>
+ <tr><td> <a href="#">i分享</a></td></tr>
+ <tr><td> <a href="#">支持与服务</a></td></tr>
+ </table>
+ </div>
+
+  <div class="contact">
+ <span style="font-family:微软雅黑;font-size:20px;margin-left:10px;">联系我们</span>
+  <table  cellpadding="5px" >
+ <tr><td><a href="#">电话：400-655-6220</a></td></tr>
+ <tr><td><a href="#">网址：www.huashangshanyou.com</a></td></tr>
+ <tr><td> <a href="#">邮箱：hssy@huashangshanyou.com</a></td></tr>
+ <tr><td> <a href="#">地址：北京市通州区</a></td></tr>
+ </table>
+ </div>
+
+ <div class="sline"></div>
+
+ <div class="erweima"><img src="img/gfweixin.png">
+ <div style="font-family:微软雅黑;font-size:20px;text-align:center;">官方微信</div>
+ </div>
+
+ <div class="erweima"><img src="img/app.png">
+ <div style="font-family:微软雅黑;font-size:20px;text-align:center;">手机客户端</div>
+ </div>
+
+ </div>
+
+ <div class="interlinkage"><span>友情链接：</span> 
+ <a href="#">北京市示范应用新能源小客车公共服务平台</a>&nbsp;&nbsp;&nbsp;
+ <a href="#">e充网</a>&nbsp;&nbsp;&nbsp;
+ <a href="#">北京市科学技术委员会</a>&nbsp;&nbsp;&nbsp;
+ <a href="#">北京市小客车指标调控管理办公室</a>&nbsp;&nbsp;&nbsp;
+ <a href="#">比亚迪</a>&nbsp;&nbsp;&nbsp;
+ <a href="#">新能源汽车产业协会</a>&nbsp;&nbsp;&nbsp;
+ <a href="#">北京汽车行业协会</a>&nbsp;&nbsp;&nbsp;
+ </div>
+
+ </body>
+</html>

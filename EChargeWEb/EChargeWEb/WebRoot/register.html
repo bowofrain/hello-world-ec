@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>桩先生-注册</title>
+  <style type="text/css">
+  a{text-decoration:none;}
+  .fixed{position:fixed;width:100%;height:80px;top:0px;background-color:white;}
+  .logo{ float:left}
+  .head{position:relative; width:1000px;  margin:0px auto;border:2px white solid;height:75.5px;}
+  .right{ margin:10px 0 0 0; width:500px; padding-bottom: 30px; float:right}
+  .top { float:right;height:12px;}
+  .top a{ font-size: 12px; color: #30D0B6;font-family:"微软雅黑"}
+  .bottom{width:100%; text-align:right; margin-bottom:0;margin-top:40px;}
+  .bottom ul{list-style-type:none;}
+  .bottom li{float:left;}
+  .bottom li a{ float:right; font-size:15px; font-family:"微软雅黑";color:#666666; padding-left: 34px;font-weight:bold;}
+  .bottom li a:hover{color:#18BAA0;}
+
+  .line{width:100%;height:1px;margin-top:0.5px;background-color:#C0C0C0;}
+
+  .middle{width:900px; margin:170px auto; border:0; height:400px;}
+  .pic{margin-top:17px;float:left;}
+  .denglu{width:350px;border:2px #F0F0F0 solid;float:right;text-align:center;}
+  .dl {font-size:25px;font-family:微软雅黑;font-weight:100; margin-top:20px;}
+  .dl  span{font-family: "宋体";font-size:15px;margin-left:25px;}
+  .dl  span a {color: #30D0B6;}
+  .consumer{text-align:left;}
+  .consumer span{margin-left:50px;}
+  .consumer a{font-family:微软雅黑;font-size:19px;color:#8B8B8B }
+  .line2{width:350px;height:1px;background-color:#F0F0F0;margin-top:10px}
+  .denglu table a {font-size:13px;color: #30D0B6}
+  .denglu table img{margin-top:15px;}
+  .denglu table  {font-family:微软雅黑; font-size:20px;}
+
+  .bottom2{width:100%;height:250px;border:0;background-color:#F1F2F3;margin-top:120px;}
+  .about{width:150px;height:200px;border:0;margin-top:20px;margin-left:140px;float:left;text-align:left;}
+  .about table{margin-top:10px;}
+  .about a{font-family:微软雅黑;font-size:15px;color:#565656;}
+  .webmap{width:150px;height:200px;border:0;margin-top:20px;margin-left:25px;float:left;text-align:left;}
+  .webmap table{margin-top:10px;}
+  .webmap a{font-family:微软雅黑;font-size:15px;color:#565656;}
+  .contact{width:270px;height:200px;border:0;margin-top:20px;margin-left:25px;float:left;text-align:left;}
+  .contact table{margin-top:10px;}
+  .contact a{font-family:微软雅黑;font-size:15px;color:#565656;}
+  .sline{width:1px;height:200px;background-color:#D4D4D4;margin-left:25px;margin-top:20px;float:left;}
+  .erweima{width:105px;height:150px;border:0;margin-top:70px;margin-left:85px;float:left;}
+
+  .interlinkage{margin-top:5px;margin-left:130px;}
+  .interlinkage span{font-family:微软雅黑;font-size:15px}
+  .interlinkage a{font-family:微软雅黑;font-size:12px;color:#4F4F4F;}
+
+
+  
+  
+ 
+  </style>
+ </head>
+ <body>
+ <div class="fixed">
+ <div class="head">
+ <div class="logo">
+ <a href="#" target="_black"><img src="img/logo.png" border="0"></a>
+ </div>
+ <div class="right">
+ <div class="top">
+<a href="map.html" target="_Blank"><img src="img/map.png" border="0">查询附近充电桩&nbsp;&nbsp;丨</a>&nbsp;<a href="login.html">登录&nbsp;丨</a>&nbsp;<a href="register.html">注册</a>
+</div>
+<div class="bottom">
+<ul> <li ><a href="index.html" ><span>首页</span></a></li> <li ><a href="#" ><span>电动社区</span></a></li> <li ><a target="_blank" href="#"><span>i分享</span></a></li> <li ><a href="#" ><span>支持与服务</span></a></li> <li ><a href="#" ><span>关于我们</span></a></li> </ul> 
+</div>
+ </div>
+ </div> 
+
+
+ <div class="line">
+ </div>
+ </div>
+
+
+ <div class="middle">
+ <div class="pic"><img src="img/logo1.png">
+ </div>
+ <div class="denglu">
+ <div class="dl">用户注册<span>已有账号？<a href="#">立即登录</a></span></div>
+ <img src="img/line.png">
+ <div class="consumer">
+ <span><a href="#" class="title" onclick="show(0)">用户</a></span>
+ <span><a href="#" onclick="show(1)">物业</a></span>
+ <span><a href="#" onclick="show(2)">4S店主</a></span>
+ </div>
+ <div class="line2"></div>
+
+ <div id="form">
+
+ <div name="one" style="display:block">
+ <table align="center" >
+ <tr><td colspan="3">
+ <input type="text" name="username"  placeholder="请输入手机号" style="width:300px;height:30px; border: 1px solid #DDDDDD;">
+ </td></tr>
+ <tr><td colspan="3">
+ <input type="password" name="password" placeholder="请输入密码" style="width:300px;height:30px; border: 1px solid #DDDDDD;margin-top:15px;">
+ </td></tr>
+ <tr><td colspan="3">
+ <input type="password" name="password" placeholder="请确认输入密码" style="width:300px;height:30px; border: 1px solid #DDDDDD;margin-top:15px;">
+ </td></tr>
+<tr >
+ <td><input type="text" placeholder="验证码" style="width:140px;height:37px;border:1px solid #DDDDDD;margin-top:15px;"></td>&nbsp;&nbsp;&nbsp;
+ <td colspan="2"><input type="submit" value="获取验证码" style="width:150px;height:40px;background-color:#30D0B6;border:0;margin-top:14px;"></td></tr>
+ <tr><td colspan="3">
+ <input type="submit" value="登录" style="width:300px;height:40px;background-color:#30D0B6;border:0;margin-top:20px">
+ </td></tr>
+  <tr ><td>
+ <input type="checkbox" name="" value="" style="margin-top:20px;margin-left:20px;" ><span style="font-size:13px;font-family:微软雅黑;">我已同意<a href="#">网站注册协议</a></span>
+ </td></tr>
+ </table>
+ </div>
+
+  <div name="two" style="display:none">
+ <table align="center" >
+ <tr><td colspan="3">
+ <input type="text" name="username"  placeholder="请输入手机号" style="width:300px;height:30px; border: 1px solid #DDDDDD;">
+ </td></tr>
+  <tr><td colspan="3">
+ <input type="text" name="username"  placeholder="请输入物业名称" style="width:300px;height:30px; border: 1px solid #DDDDDD;margin-top:15px;">
+ </td></tr>
+ <tr><td colspan="3">
+ <input type="password" name="password" placeholder="请输入密码" style="width:300px;height:30px; border: 1px solid #DDDDDD;margin-top:15px;">
+ </td></tr>
+ <tr><td colspan="3">
+ <input type="password" name="password" placeholder="请确认输入密码" style="width:300px;height:30px; border: 1px solid #DDDDDD;margin-top:15px;">
+ </td></tr>
+<tr >
+ <td><input type="text" placeholder="验证码" style="width:140px;height:37px;border:1px solid #DDDDDD;margin-top:15px;"></td>&nbsp;&nbsp;&nbsp;
+ <td colspan="2"><input type="submit" value="获取验证码" style="width:150px;height:40px;background-color:#30D0B6;border:0;margin-top:14px;"></td></tr>
+ <tr><td colspan="3">
+ <input type="submit" value="登录" style="width:300px;height:40px;background-color:#30D0B6;border:0;margin-top:20px">
+ </td></tr>
+  <tr ><td>
+ <input type="checkbox" name="" value="" style="margin-top:20px;margin-left:20px;" ><span style="font-size:13px;font-family:微软雅黑;">我已同意<a href="#">网站注册协议</a></span>
+ </td></tr>
+ </table>
+ </div>
+
+  <div name="three" style="display:none">
+ <table align="center" >
+ <tr><td colspan="3">
+ <input type="text" name="username"  placeholder="请输入手机号" style="width:300px;height:30px; border: 1px solid #DDDDDD;">
+ </td></tr>
+ <tr><td colspan="3">
+ <input type="password" name="password" placeholder="请输入4S店名称" style="width:300px;height:30px; border: 1px solid #DDDDDD;margin-top:15px;">
+ </td></tr>
+ <tr><td colspan="3">
+ <input type="password" name="password" placeholder="请输入密码" style="width:300px;height:30px; border: 1px solid #DDDDDD;margin-top:15px;">
+ </td></tr>
+ <tr><td colspan="3">
+ <input type="password" name="password" placeholder="请确认输入密码" style="width:300px;height:30px; border: 1px solid #DDDDDD;margin-top:15px;">
+ </td></tr>
+<tr >
+ <td><input type="text" placeholder="验证码" style="width:140px;height:37px;border:1px solid #DDDDDD;margin-top:15px;"></td>&nbsp;&nbsp;&nbsp;
+ <td colspan="2"><input type="submit" value="获取验证码" style="width:150px;height:40px;background-color:#30D0B6;border:0;margin-top:14px;"></td></tr>
+ <tr><td colspan="3">
+ <input type="submit" value="登录" style="width:300px;height:40px;background-color:#30D0B6;border:0;margin-top:20px">
+ </td></tr>
+  <tr ><td>
+ <input type="checkbox" name="" value="" style="margin-top:20px;margin-left:20px;" ><span style="font-size:13px;font-family:微软雅黑;">我已同意<a href="#">网站注册协议</a></span>
+ </td></tr>
+ </table>
+ </div>
+
+ </div>
+
+ <script>
+
+	var hobj=document.getElementsByTagName("a");
+
+	var contobj=document.getElementById("form").getElementsByTagName("div");
+
+	function show(num){
+
+			for(var i=0;i<hobj.length;i++){
+
+				if(i==num){
+
+						hobj[i].className="title";
+						contobj[i].style.display="block";
+
+					}else{
+
+						hobj[i].className="";
+						contobj[i].style.display="none";
+
+						}
+	
+				}
+		}
+
+</script>
+ </div>
+ </div>
+
+
+ <div class="bottom2">
+ <div class="about">
+ <span style="font-family:微软雅黑;font-size:20px;margin-left:10px;">关于我们</span>
+  <table  cellpadding="5px">
+ <tr><td><a href="#">桩先生介绍</a></td></tr>
+ <tr><td><a href="#">最新动态</a></td></tr>
+ <tr><td> <a href="#">投诉建议</a></td></tr>
+ <tr><td> <a href="#">联系我们</a></td></tr>
+ <tr><td> <a href="#">关于我们</a></td></tr>
+ </table>
+ </div>
+
+ <div class="webmap">
+ <span style="font-family:微软雅黑;font-size:20px;margin-left:10px;">网站地图</span>
+  <table cellpadding="5px">
+ <tr><td><a href="#">关于我们</a></td></tr>
+ <tr><td><a href="#">桩先生</a></td></tr>
+ <tr><td> <a href="#">电动社区</a></td></tr>
+ <tr><td> <a href="#">i分享</a></td></tr>
+ <tr><td> <a href="#">支持与服务</a></td></tr>
+ </table>
+ </div>
+
+  <div class="contact">
+ <span style="font-family:微软雅黑;font-size:20px;margin-left:10px;">联系我们</span>
+  <table  cellpadding="5px" >
+ <tr><td><a href="#">电话：400-655-6220</a></td></tr>
+ <tr><td><a href="#">网址：www.huashangshanyou.com</a></td></tr>
+ <tr><td> <a href="#">邮箱：hssy@huashangshanyou.com</a></td></tr>
+ <tr><td> <a href="#">地址：北京市通州区</a></td></tr>
+ </table>
+ </div>
+
+ <div class="sline"></div>
+
+ <div class="erweima"><img src="img/gfweixin.png">
+ <div style="font-family:微软雅黑;font-size:20px;text-align:center;">官方微信</div>
+ </div>
+
+ <div class="erweima"><img src="img/app.png">
+ <div style="font-family:微软雅黑;font-size:20px;text-align:center;">手机客户端</div>
+ </div>
+
+ </div>
+
+ <div class="interlinkage"><span>友情链接：</span> 
+ <a href="#">北京市示范应用新能源小客车公共服务平台</a>&nbsp;&nbsp;&nbsp;
+ <a href="#">e充网</a>&nbsp;&nbsp;&nbsp;
+ <a href="#">北京市科学技术委员会</a>&nbsp;&nbsp;&nbsp;
+ <a href="#">北京市小客车指标调控管理办公室</a>&nbsp;&nbsp;&nbsp;
+ <a href="#">比亚迪</a>&nbsp;&nbsp;&nbsp;
+ <a href="#">新能源汽车产业协会</a>&nbsp;&nbsp;&nbsp;
+ <a href="#">北京汽车行业协会</a>&nbsp;&nbsp;&nbsp;
+ </div>
+
+ </body>
+</html>
+

@@ -1,0 +1,17 @@
+
+.cont{ width: 1000px; margin: auto; padding-bottom: 50px;}
+.title{ width: 100%;height: 78px;line-height: 78px;color: #44dfc6;}
+.title.border_botton{ border-bottom: 1px solid #44dfc6;}
+.title p{ font-size: 25px; width: 1000px; margin: auto; padding-left: 10px;}
+.one_title{ width: 890px; line-height: 33px; font-size:18px; padding-bottom: 20px; display: block; margin: auto; text-indent: 30px; color: #818181;}
+.lxwm{ width: 1000px; margin: auto; padding:20px 0 0px;}
+.lxwm.border_botton{ border-bottom: 1px solid #dbdbdb;}
+.lxwm ul{ overflow: hidden; padding-top: 20px;}
+.lxwm li{ width: 50%; float: left; height: 29px; padding-bottom: 30px;}
+.lxwm li.one_lxwm{ width: 100%; clear: both; float: none; height: 150px;}
+.lxwm li.one_lxwm textarea{ width: 730px; height: 125px; padding: 10px; border-radius: 3px;border: 1px solid #d0d0d0;box-shadow:2px 2px 2px #eee inset}
+.lxwm li span{ width: 170px; display: block; float: left; height:29px; line-height: 29px; text-align: right; color: #7b7b7b;}
+.lxwm li input,.lxwm li select{ width: 237px;height: 27px;padding-left: 13px; border-radius: 3px;border: 1px solid #d0d0d0;box-shadow:2px 2px 2px #eee inset}
+.lxwm li select{ width: 250px;}
+.lxwm p{ height: 50px; padding-right: 100px; overflow: hidden;}
+.lxwm p input{ width: 148px; height: 39px; background: #ff8221; border: 1px solid #e66807; float: right; color: #fff; border-radius: 4px;overflow: hidden; font-size: 20px; cursor: pointer;}

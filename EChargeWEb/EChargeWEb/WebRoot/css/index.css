@@ -1,0 +1,305 @@
+#header {
+	-moz-transition: all ease-in-out .6s;
+	-ms-transition: all ease-in-out .6s;
+	-webkit-transition: all ease-in-out .6s;
+	transition: all ease-in-out .6s;
+}
+
+
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	min-width: 768px;
+	height: 50px;
+	color: #63D0B6;
+	background-color: #fff;
+	/*border-bottom: 1px solid #222222;*/
+	box-shadow: 0 0.1px 3px .1px #222  ;
+}
+nav img{
+	height: 80%;
+	margin-left: 10%;
+}
+nav ul{
+	margin-right: 10%;
+	float: right;
+}
+nav ul li{
+	margin-right: 20px;
+	list-style: none;
+	float: left;
+	line-height: 50px;
+}
+.screen {
+	width: 100%;
+	
+	min-width: 768px;
+	margin: 0 auto;
+	height: 500px;
+}
+
+.screen:nth-child(2n+1) {
+	background-color: #F7F7F7;
+}
+
+#container1 {
+	height: 400px
+}
+
+.introduce {
+	width: 100%;
+	height: 100%;
+	min-width: 768px;
+}
+
+.introduce-company h2 {
+	padding-top: 70px;
+	width: 120px;
+	margin: 0 auto;
+}
+
+.introduce-company p {
+	text-indent: 2.5%;
+	padding-top: 50px;
+	line-height: 2em;
+	vertical-align: middle;
+	width: 30%;
+	margin: 0 auto;
+}
+
+.introduce-service {
+	color: #000;
+	padding-top: 100px;
+}
+
+.introduce-service h2 {
+	width: 150px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+@media only screen and (max-width: 1260px) {
+	#container2{
+		height: 900px;
+	}
+	.introduce-service{
+		width: 60%;
+		margin: 0 auto;
+	}
+	.service{
+		width: 300px;
+	}
+}
+
+.service {
+	width: 15%;
+	min-width: 210px;
+	margin-right: 0px;
+	float: left;
+}
+
+.service img {
+	width: 14.9%;
+	min-width: 200px;
+}
+
+.service h3 {
+	padding-left: 30px;
+}
+
+.service p {
+	width: 14.9%;
+	min-width: 200px;
+}
+
+#service1 {
+	margin-left: 100px;
+}
+
+.footer {
+	color: rgba(255, 255, 255, .9);
+	width: 100%;
+	
+	min-width: 768px;
+	height: 180px;
+	background-color: #222222;
+	padding-top: 20px;
+	
+	margin: 0 auto;
+}
+
+.footer a {
+	color: rgba(255, 255, 255, .9);
+}
+
+.footer li {
+	list-style: none;
+}
+.footer-main{
+	width: 755px;
+	margin: 0 auto;
+}
+.footer-container {
+	float: left;
+	margin-left: 5%;
+}
+
+
+.footer-container img {
+	width: 110px;
+	height: 110px;
+	float: left;
+	
+	margin-bottom: 8px;
+}
+
+.bottom-erweima {
+	height: 136px;
+	padding-left: 5%;
+	border-left: 1px solid #fff;
+}
+
+.bottom-erweima-part {
+	float: left;
+}
+
+.bottom-erweima-part p {
+	clear: both;
+	padding-left: 20px;
+}
+
+
+/*id1 : HowU = How to use */
+
+.HowU {
+	padding-left: 19%;
+	padding-top: 3%;
+}
+
+.HowU-image img {
+	width: 100%;
+	height: 400px;
+}
+
+.HowU-image {
+	width: 33%;
+	height: 400px;
+	float: left;
+}
+
+.HowU-text {
+	float: left;
+	width: 33%;
+	height: 400px;
+}
+
+.HowU-image + .HowU-text {
+	margin-left: 13%;
+}
+
+.HowU-text + .HowU-image {
+	margin-left: 13%;
+}
+
+.top {
+	width: 100%;
+	min-width: 768px;
+	/*background-color: #27AE50;*/
+	margin-top: 50px;
+	background-image: url(../img/service.jpg);
+	color: #fff;
+	height: 360px;
+}
+
+#top-title {
+	margin-top: 0;
+	text-align: center;
+	font-size: 2.3em;
+	padding-top: 20px;
+	font-weight: 800;
+}
+
+.top-content-title {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+
+
+
+#home {
+	width: 90%;
+	height: 40px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.1em;
+	outline: none;
+	color: #000;
+	border: 1px solid #747474;
+	border-radius: 7px;
+}
+.search_div{
+	margin-top: 50px;
+	background-color: rgba(233, 237, 240, .8);
+}
+.searchHome {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 5px;
+	padding-left: 10%;
+	padding-bottom: 5px;
+	position: relative;
+	
+}
+
+.search-icon {
+	color: #000;
+	position: absolute;
+	top: 50%;
+	left: 87%;
+}
+#title{
+	height: 150px;
+	
+}
+
+.App{
+	background-color: #F7F7F7;
+}
+.Apptitle{
+	text-align: center;
+	clear: both;
+	background: #DAE0F1;
+	font-size: 1.3em;
+	line-height: 3em;
+}
+.top-content {
+	margin-left: 25%;
+}
+.down{
+	width: 651px;
+	 margin: 0 auto;
+}
+.erweima{
+	float: left;
+	margin-left: 10px;
+}
+.description{
+	font-size: 1.5em;
+	color: #18BAA0;
+}
+.todown{
+	font-family:"微软雅黑" ;
+	font-size: 1.1em;
+	font-weight: 800;
+}
+
+
+.erweima img{
+	margin-top: 60px;
+	width: 150px;
+}
+.ad{
+	margin-left: 5%;
+	height: 400px;
+}

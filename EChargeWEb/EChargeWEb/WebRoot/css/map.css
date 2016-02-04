@@ -1,0 +1,95 @@
+nav {
+	width: 100%;
+	max-width: 1440px;
+	min-width: 768px;
+	height: 50px;
+	/*border-bottom: 1px solid #222222;*/
+	box-shadow: 0 0.1px 3px .1px #222;
+}
+
+nav ul {
+	margin-right: 5%;
+	float: right;
+}
+
+nav ul li {
+	margin-right: 40px;
+	list-style: none;
+	float: left;
+	line-height: 50px;
+}
+
+#searchAround{
+	padding: 10px 20px;
+	border: 0px;
+	border-radius: 20px;
+	background-color: aqua;
+	cursor: pointer;
+}
+#searchAround:hover{
+	opacity: 0.9
+}
+.searchAound_div {
+	padding: 10px 50px;
+	width: 100%;
+	
+	min-width: 768px;
+	border-bottom: 1px solid #747474;
+}
+
+.searchAound_div span {
+	font-size: 19px;
+	font-family: elephant;
+	color: green;
+}
+
+.other {
+	float: left;
+	width: 20%;
+	height: 100%;
+	margin: 0;
+	/*overflow: hidden;*/
+	font-family: "微软雅黑";
+}
+
+#searchKey {
+	width: 70%;
+	height: 40px;
+	margin-left: 30px;
+	padding-left: 30px;
+	border-radius: 20px;
+	font-size: 19px;
+	font-weight: 500;
+	outline: none;
+}
+
+.detail {
+	float: left;
+	width: 16%;
+	height: 82%;
+	overflow-y: scroll;
+}
+
+.detail * {
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+}
+
+.detail p {
+	background-color: #8BC540;
+	color: #fff;
+}
+
+.detail ul li {
+	line-height: 40px;
+	border-bottom: 1px solid #000;
+}
+
+.detail ul li:hover {
+	background-color: #F5F3F0;
+}
+#map{
+	width: 84%;
+	height: 82%;
+}

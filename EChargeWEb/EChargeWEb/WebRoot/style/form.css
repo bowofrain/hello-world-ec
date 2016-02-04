@@ -1,0 +1,368 @@
+/*整体的部分*/
+.cont {
+
+    width: 1100px;
+    margin: auto;
+    background: #FFF none repeat scroll 0% 0%;
+    padding: 20px 0px;
+    overflow: hidden;
+
+}
+.cont {
+
+    width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0px;
+
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p, img {
+
+    padding: 0px;
+    margin: 0px;
+    list-style: outside none none;
+    border: 0px none;
+
+}
+* {
+
+    margin: 0px;
+    padding: 0px;
+    font-family: "微软雅黑","宋体",tahoma,arial,sans-serif;
+    letter-spacing: 0.5px;
+
+}
+
+
+/*左边的部分*/
+.nav_left {
+
+    margin-left: 1px;
+    width: 220px;
+    border-radius: 3px 0px 0px;
+    overflow: hidden;
+    float: left;
+
+}
+.nav_left h2 {
+    background: #F8F8F8 none repeat scroll 0% 0%;
+    border-color: #F8F8F8 #F8F8F8 #F8F8F8 #30D0B6;
+    border-style: solid;
+    border-width: 1px 1px 1px 2px;
+    font-size: 16px;
+    font-weight: normal;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    width: 220px;
+}
+.nav_left h2 a {
+    color: #30D0B6;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+.nav_left h2 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 60px;
+    text-align: center;
+}
+
+
+
+.mcmb_menu {
+    border-bottom: 1px solid #EEE;
+    border-left: 1px solid #EEE;
+    border-right: 1px solid #EEE;
+    height: auto;
+    width: 218px;
+}
+.mcmb_menu li {
+    line-height: 25px;
+    text-indent: 15px;
+}
+
+.parent_menu {
+    border-bottom: 1px dashed #EEE;
+    padding: 10px 0px;
+    position: relative;
+}
+.parent_menu a {
+    color: #333;
+    display: block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "微软雅黑","宋体",tahoma,arial,sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.pm_icon_open {
+    background-image: url("images/ico_gr.png");
+    background-position: 0px 0px;
+    display: inline-block;
+    height: 11px;
+    margin-right: 7px;
+    overflow: hidden;
+    width: 11px;
+}
+
+Matched CSS Rules
+.on .pm_icon_open {
+background-position: -16px 0;
+}
+
+
+
+
+.child_menu {
+    font-size: 12px;
+    width: 100%;
+}
+.child_menu li {
+    border-left: 2px solid #FFF;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 32px;
+}
+.child_menu a {
+    color: #666;
+    display: block;
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+}
+
+
+.mfrx_lx {
+    height: 87px;
+    background: #FFF none repeat scroll 0% 0%;
+    text-align: center;
+}
+.mfrx_lx p {
+    height: 52px;
+    line-height: 52px;
+    color: #30D0B6;
+}
+.mfrx_lx p i {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: transparent url("../../images/home/phone_lx.png") no-repeat scroll 0% 0%;
+    vertical-align: -5px;
+    margin-right: 6px;
+}
+
+.mfrx_lx b {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    background: #30D0B6 none repeat scroll 0% 0%;
+    color: #FFF;
+    font-weight: normal;
+}
+
+
+
+/*个人中心首页右边的部分*/
+.cont .about {
+    border: medium none;
+}
+.mima, .azjd {
+    width: 863px;
+    float: right;
+    border: 0px solid #E7E7E7;
+    padding-bottom: 50px;
+}
+.index dl {
+    padding: 20px;
+    overflow: hidden;
+    border: 1px solid #E7E7E7;
+}
+.index dt {
+    border-radius: 52px;
+    float: left;
+    height: 104px;
+    position: relative;
+    width: 104px;
+}
+.index dt img {
+    height: 104px;
+    border-radius:52px;
+}
+.index dd {
+    margin:10px 150px;
+}
+.index dd p {
+    font-size: 12px;
+    color: #666;
+    line-height: 25px;
+}
+.index dd b {
+    font-size: 16px;
+}
+
+
+
+.jilu {
+    border: 1px solid #E7E7E7;
+    margin-top: 20px;
+}
+
+.area_wrap_margin {
+    margin: 20px 0px 0px 20px;
+    width: auto;
+}
+
+.dn_title {
+    border-bottom: 1px dotted #E8E8E8;
+    font-size: 14px;
+    height: 15px;
+    line-height: 15px;
+    margin: 0px 20px 0px 0px;
+    padding-bottom: 20px;
+    width: auto;
+    color: #333;
+}
+
+
+.dnt_text {
+    border-left: 2px solid #01AF69;
+    display: inline-block;
+    float: left;
+    padding-left: 10px;
+}
+
+.dn_content {
+    height: auto;
+    overflow: hidden;
+}
+
+.no_content {
+    margin: 30px auto;
+    min-height: 190px;
+    width: 500px;
+}
+
+.no_content img {
+    float: left;
+}
+
+.no_content .nc_tips {
+    padding: 60px 0px 0px 200px;
+    text-align: center;
+}
+
+.nc_tips h3 {
+    color: #333;
+    font-size: 20px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+.btn_instant {
+    background-color: #F36F20;
+    color: #FFF;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 40px;
+    padding: 8px 30px;
+    text-align: center;
+}
+
+
+
+/*信息管理右边的部分*/
+
+.mima, .azjd {
+    width: 863px;
+    float: right;
+    border: 0px solid #E7E7E7;
+    padding-bottom: 50px;
+}
+
+.mima h2, .azjd h2 {
+    border-bottom: 0px solid #E8E8E8;
+    overflow: hidden;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+}
+
+.mima h2 span, .azjd h2 span {
+    text-align:left;
+    font-size:24;
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    margin-top: 16px;
+    padding-left: 10px;
+}
+
+.mima ul {
+    padding-top: 55px;
+}
+.mima li {
+    overflow: hidden;
+    padding-bottom: 29px;
+    font-size: 12px;
+    line-height: 29px;
+    color: #000;
+}
+.mima li span {
+    width: 160px;
+    font-weight: normal;
+    float: left;
+    font-size: 12px;
+    text-align: right;
+    line-height: 29px;
+    color: #000;
+    display: block;
+}
+.mima li input, .mima li select  {
+    height: 27px;
+    width: 245px;
+    border: 1px solid #E1E1E1;
+    font-size: 13px;
+    color: #A7A7A7;
+    padding-left: 9px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px #FAFAFA inset;
+}
+
+.mima p input {
+    width: 93px;
+    height: 28px;
+    text-align: center;
+    background: #aaaaaa none repeat scroll 0% 0%;
+    font-size: 16px;
+    color: #FFF;
+    border-radius: 4px;
+    margin-left: 160px;
+    cursor: pointer;
+}
+
+
+/*修改密码css与信息管理相同*/
+
+
+
+
+
+
+
+
+
+
+
+
