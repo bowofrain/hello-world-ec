@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 
 public class GetSession extends HttpServlet {
 	
-	private String TAG = "GetSession";
+	private String TAG = "GetSession:";
 
 	/**
 	 * Constructor of the object.
